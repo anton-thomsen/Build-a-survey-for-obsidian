@@ -9,14 +9,58 @@
     <h1 id="title">Obsidian Survey</h1>
     <p id="description">This is a set of questions to get to know your experience with the note taking app Obsidian.</p>
     <form id="survey-form">
-      <label for="text">Name:</label>
-      <input required id="text" name="text" type="text" placeholder="Enter your name"><br>
-      <label for="email">Email:</label>
-      <input required id="email" type="email" name="email" placeholder="Enter your email"><br>
-      <label for="number">Rating of your experience</label>
-      <input id="number" type="number">
-      
+      <label id="name-label" for="name">Name:</label>
+      <input required id="name" type="text" placeholder="Enter your name"><br>
 
+      <label id="email-label" for="email">Email:</label>
+      <input required id="email" type="email" name="email" placeholder="Enter your email"><br>
+
+      <label id="number-label" for="number">Rating of your experience </label>
+      <input max="10" min="1" id="number" type="number" placeholder="1-10"><br><br>
+      
+      <label for="dropdown">Which platform do you use for obsidian</label><br>
+      <select id="dropdown" name="ob-platform">
+        <option default disabled>Choose Platform</option>
+        <option value="ios">IOS</option>
+        <option value="andriod">Andriod</option>
+        <option value="pc">PC</option>
+        <option value="mac">Mac</option>
+      </select><br>
+
+<p>What kind of orenaization system do you use?</p>
+<div>
+      <label for="zk">ZettleKasten</label>
+      <input id="zk" type="radio" name="type" value="zk">
+      <label for="sj">SJ</label>
+      <input id="sj" type="radio" name="type" value="sj">
+
+      </div>
+      
+      <div>
+      <label for="so">Standard Orgenaization</label>
+      <input id="so" type="radio" name="type" value="so">
+      <label for="sk">SK</label>
+      <input id="sk" type="radio" name="type" value="sk">
+      </div>
+
+      <div>
+        <p>What would you like to see improved?</p>
+        <label for="os">Open-Source</label>
+        <input id="os" type="checkbox" value="open-source">
+
+        <label for="ui">UI</label>
+        <input id="ui" type="checkbox" value="ui">
+
+        <label for="explanation">Guide</label>
+        <input id="explanation" type="checkbox" value="explanation">
+        </div>
+
+        <div>
+          <label for="comments">Additional Comments</label>
+          <textarea id="comments" rows="5" cols="30"></textarea>
+          
+          <input id="submit" type="submit" value="Submit">
       </form>
+
   </body>
 </html>
